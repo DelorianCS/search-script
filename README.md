@@ -54,7 +54,7 @@ And now you can do `search` on your terminal and use the script from there!
   ```
   What name are you looking for?
 ```
-  Select what name you want to search for (e.g. flag)
+  Select what name you want to search for `(e.g. flag)`
 
 
 **CAREFUL**, do not type the file extension 
