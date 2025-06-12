@@ -53,6 +53,6 @@ search() {python3 /directory/search.py}
   
 ## Requirements
 
-  Python3
-  No external dependencies
-  Any Linux distro
+  - Python3
+  - No external dependencies
+  - Any Linux distro
