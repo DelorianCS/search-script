@@ -7,8 +7,6 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Examples](#examples)
-- [Requirements](#requirements)
 - [Python Script](./search.py)
 
 ## Features
@@ -64,18 +62,3 @@ And now you can do `search` on your terminal and use the script from there!
   Should the name match exactly or just contain it?
 ```
   Pick one (exact/contain)
-
-## Examples
-This is an usage example for the script where an image `(rei.png)` is found
-```
-Where do you want to search?: /
-Are you looking for a file or a directory? (file/directory): file
-What name are you looking for?: rei
-Should the name match exactly or just contain it? (exact/contain): exact
-Found the following matches:
-/home/delorian/Downloads/images/rei.png
-```
-## Requirements
-
-  - Python3
-  - Any Linux distro
