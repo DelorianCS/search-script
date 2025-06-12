@@ -16,18 +16,18 @@ A Python script to recursively search for files or directories by name with exac
 1. Ensure Python 3.6+ is installed
 2. Clone the repository:
 
-```bash
+```
 git clone https://github.com/DelorianCS/search-script.git
 cd search-script.git
 python search.py
 ```
 ## Usage
   Basic Usage
-```bash
+```
   Where do you want to search?:
 ```
   Select a directory (e.g. "/home/user/Downloads/"
-```bash
+```
   Are you looking for a file or a directory?
 ```
   Select which one you want to search for (file/directory)
