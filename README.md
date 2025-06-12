@@ -55,14 +55,17 @@ And now you can do `search` on your terminal and use the script from there!
   What name are you looking for?
 ```
   Select what name you want to search for (e.g. flag)
-```
-  Should the name match exactly or just contain it?
-```
-  Pick one (exact/contain)    **CAREFUL**, do not type the file extension 
+
+
+**CAREFUL**, do not type the file extension 
   
 - ❌ Incorrect usage `(file.txt)`   
     
 - ✅️ Correct usage `(file)` 
+```
+  Should the name match exactly or just contain it?
+```
+  Pick one (exact/contain)
 
 ## Examples
 This is an usage example for the script where an image `(rei.png)` is found
