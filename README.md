@@ -1,5 +1,9 @@
 <h1 align="center">File/Directory Search Script</h1>
 
+<p align="center">
+  <img src="peek-view.gif" alt="Preview of script" />
+</p>
+
 ## Features
 
 ### 🔍 Search for files or directories by name
