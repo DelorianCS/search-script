@@ -1,6 +1,6 @@
 <h1 align="center">File/Directory Search Script</h1>
 
-![Preview](peek-view.gif)
+![Preview](Peek-View.gif)
 
 ## Features
 
