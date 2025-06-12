@@ -3,6 +3,17 @@
 
 A Python script to recursively search for files or directories by name with exact or partial matching.
 
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration as Command](#configuration-as-command)
+- [Requirements](#requirements)
+- [Examples](#examples)
+- [License](#license)
+
 ## Features
 
 ### 🔍 Search for files or directories by name
