@@ -62,7 +62,7 @@ search() {python3 /directory/search.py}
   #### CAREFUL, do not type the file extension
 
 ## Examples
-#### This is an usage example for the script where an image `rei.png` is found
+This is an usage example for the script where an image `rei.png` is found
 ```
 Where do you want to search?: /
 Are you looking for a file or a directory? (file/directory): file
