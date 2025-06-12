@@ -2,7 +2,7 @@
 
 ![Preview](Peek-View.gif)
 
-## Why use it?
+## Features
 
 ### Search for files or directories by name
 ###  Choose between exact matches or partial containment
