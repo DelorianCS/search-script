@@ -2,12 +2,10 @@
 # File/Directory Search Script
 
 
-## Table of Contents
+<p align="center">
+  ### File
+</p>
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Python Script](./search.py)
 
 ## Features
 
