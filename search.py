@@ -26,60 +26,63 @@ def search_items(path, item_type, target_name, match_type):
     target_name_upper = target_name.upper()
     for current_folder, folders, files in os.walk(path, onerror=lambda e: None):
         try:
-            things = files if item_type == 'file' else folders
+            # Decide whether to look for files or directories
+            candidates = files if item_type == 'file' else folders
         except PermissionError:
-            print(f"Permission denied: {current_folder}")
+            print(f"Permission denied for: {current_folder}. Skipping...")
             continue
         except Exception as e:
-            print(f"Error reading {current_folder}: {e}")
+            print(f"Error accessing {current_folder}: {e}. Skipping...")
             continue
 
-        for thing in things:
-            name_check = os.path.splitext(thing)[0] if item_type == 'file' else thing
+        for candidate in candidates:
+            # Strip extension for files, keep directory names as is
+            name_check = os.path.splitext(candidate)[0] if item_type == 'file' else candidate
             name_check_upper = name_check.upper()
 
             if match_type == 'exact' and name_check_upper == target_name_upper:
-                found_items.append(os.path.join(current_folder, thing))
+                found_items.append(os.path.join(current_folder, candidate))
             elif match_type == 'contain' and target_name_upper in name_check_upper:
-                found_items.append(os.path.join(current_folder, thing))
+                found_items.append(os.path.join(current_folder, candidate))
     return found_items
 
 def start_search():
     print_ascii_art()
     path, item_type, name, match_type = get_user_input()
 
-    if item_type not in ['file', 'directory']:
-        print("Please enter 'file' or 'directory'.")
+    if item_type not in ('file', 'directory'):
+        print("Oops! Please enter either 'file' or 'directory'.")
         return
 
-    if match_type not in ['exact', 'contain']:
-        print("Please enter 'exact' or 'contain'.")
+    if match_type not in ('exact', 'contain'):
+        print("Please type 'exact' or 'contain' to specify the match type.")
         return
 
     if not os.path.exists(path):
-        print("That path doesn't exist.")
+        print(f"Sorry, the path '{path}' doesn't exist.")
         return
 
     if not os.path.isdir(path):
-        print("That's not a directory.")
+        print(f"Looks like '{path}' is not a directory.")
         return
 
     try:
         os.listdir(path)
     except PermissionError:
-        print("You don't have permission to access this directory.")
+        print("You don't have permission to access this directory. Try another path.")
         return
     except Exception as e:
-        print(f"Can't read the directory: {e}")
+        print(f"Unexpected error reading the directory: {e}")
         return
 
     results = search_items(path, item_type, name, match_type)
 
     if results:
-        print("Found the following matches:")
-        for result in results:
-            print(result)
+        print("\nMatches found:")
+        for item in results:
+            print(item)
     else:
-        print("No matches found.")
+        print("\nNo matches found. Maybe try a different name or path?")
 
-start_search()
+if __name__ == "__main__":
+    start_search()
