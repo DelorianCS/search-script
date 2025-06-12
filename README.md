@@ -2,13 +2,13 @@
 
 ![Preview](Peek-View.gif)
 
-## Features
+## Why use it?
 
-### 🔍 Search for files or directories by name
-### ⚙️ Choose between exact matches or partial containment
-### 📂 Recursive search through all subdirectories
-### 💻 Simple interactive command-line interface
-### 🚀 Fast scanning using native Python `os.walk()`
+### Search for files or directories by name
+###  Choose between exact matches or partial containment
+### Recursive search through all subdirectories
+### Simple interactive command-line interface
+### Fast scanning using native Python `os.walk()`
 
 ## Installation
 1. Make sure you are on Linux
