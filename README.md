@@ -19,6 +19,7 @@ A Python script to recursively search for files or directories by name with exac
 ```bash
 git clone https://github.com/DelorianCS/search-script.git
 cd search-script.git
+python search.py
 ```
 ## Usage
   Basic Usage
