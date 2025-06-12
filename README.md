@@ -1,6 +1,6 @@
 <h1 align="center">File/Directory Search Script</h1>
-(./peek-view.gif)
 
+[![Preview](./peek-view.gif)]
 ## Features
 
 ### 🔍 Search for files or directories by name
