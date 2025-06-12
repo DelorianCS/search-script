@@ -65,7 +65,7 @@ And now you can do `search` on your terminal and use the script from there!
 - ✅️ Correct usage `(file)` 
 
 ## Examples
-This is an usage example for the script where an image `rei.png` is found
+This is an usage example for the script where an image `(rei.png)` is found
 ```
 Where do you want to search?: /
 Are you looking for a file or a directory? (file/directory): file
