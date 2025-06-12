@@ -9,9 +9,9 @@ A Python script to recursively search for files or directories by name with exac
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Requirements](#requirements)
 - [Examples](#examples)
-- [License](#license)
+- [Requirements](#requirements)
+
 
 ## Features
 
