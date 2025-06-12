@@ -7,7 +7,7 @@
 - 🔍 Search for files or directories by name  
 - 🎯 Choose between exact matches or partial containment  
 - 🔄 Recursive search through all subdirectories  
-- 💻 Interactive *or* command-line interface  
+- 💻 Simple interactive command-line interface  
 - ⚡ Fast scanning using native Python `os.walk()`
 
 ---
@@ -32,17 +32,16 @@ nano ~/.bashrc  # or ~/.zshrc
 
 Add this at the bottom:
 ```bash
-search() { python3 /FULL/PATH/TO/search.py "$@" ; }
+search() { python3 /FULL/PATH/TO/search.py ; }
 ```
 
-Now you can use `search` as a custom command.
+Now you can run `search` in any terminal window!
 
 ---
 
-## Usage Options
+## 🚀 Usage (Interactive Mode)
 
-### 🧑 Interactive Mode (default)
-If no arguments are provided, the script will prompt you step by step:
+The script will ask you a few questions:
 
 ```
 Where do you want to search?:
@@ -56,7 +55,7 @@ Are you looking for a file or a directory? (file/directory):
 ```
 What name are you looking for?:
 ```
-> Just the name, without extension.  
+> Just the name, **without extension**.  
 > ❌ `file.txt` → ❌  
 > ✅ `file` → ✅
 
@@ -64,24 +63,7 @@ What name are you looking for?:
 Should the name match exactly or just contain it? (exact/contain):
 ```
 
----
-
-### ⚙️ Command-Line Mode
-
-Use the script with flags to skip prompts:
-
-```bash
-python3 search.py -p /home/user/docs -k file -n report -m contain
-```
-
-#### 🔧 Available arguments:
-
-| Flag            | Description                             |
-|-----------------|-----------------------------------------|
-| `-p` `--path`   | Path to start the search                |
-| `-k` `--kind`   | `file` or `directory`                   |
-| `-n` `--name`   | Name to search (without extension)      |
-| `-m` `--match`  | `exact` or `contain`                    |
+After that, the search begins — and you'll see matching results printed out.
 
 ---
 
