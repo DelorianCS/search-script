@@ -27,7 +27,7 @@ python3 search.py
 ✅ You can also make it a terminal command:
 
 ```bash
-nano ~/.bashrc  # or ~/.zshrc
+nano ~/.bashrc  | or ~/.zshrc
 ```
 
 Add this at the bottom:
