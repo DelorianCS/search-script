@@ -1,8 +1,6 @@
 
 # File/Directory Search Script
 
-A Python script to recursively search for files or directories by name with exact or partial matching.
-
 
 ## Table of Contents
 
