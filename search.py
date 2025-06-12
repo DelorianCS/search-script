@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+import os
+
 def print_ascii_art():
     art = r"""
   _____                     _        _____           _       _   
@@ -11,9 +14,6 @@ def print_ascii_art():
 """
     print(art)
 
-# Simple Search Script
-import os
-
 def get_user_input():
     search_path = input("Where do you want to search?: ").strip()
     item_type = input("Are you looking for a file or a directory? (file/directory): ").strip().lower()
@@ -23,22 +23,26 @@ def get_user_input():
 
 def search_items(path, item_type, target_name, match_type):
     found_items = []
-    for current_folder, folders, files in os.walk(path):
-        if item_type == 'file':
-            items_to_check = files
-        else:
-            items_to_check = folders
-        
-        for item in items_to_check:
-            name_for_comparison = os.path.splitext(item)[0] if item_type == 'file' else item
-            
-            if match_type == 'exact' and name_for_comparison == target_name:
-                found_items.append(os.path.join(current_folder, item))
-            elif match_type == 'contain' and target_name in name_for_comparison:
-                found_items.append(os.path.join(current_folder, item))
+    for current_folder, folders, files in os.walk(path, onerror=lambda e: None):
+        try:
+            things = files if item_type == 'file' else folders
+        except PermissionError:
+            print(f"Permission denied: {current_folder}")
+            continue
+        except Exception as e:
+            print(f"Error reading {current_folder}: {e}")
+            continue
+
+        for thing in things:
+            name_check = os.path.splitext(thing)[0] if item_type == 'file' else thing
+
+            if match_type == 'exact' and name_check == target_name:
+                found_items.append(os.path.join(current_folder, thing))
+            elif match_type == 'contain' and target_name in name_check:
+                found_items.append(os.path.join(current_folder, thing))
     return found_items
 
-def main():
+def start_search():
     print_ascii_art()
     path, item_type, name, match_type = get_user_input()
 
@@ -50,8 +54,21 @@ def main():
         print("Please enter 'exact' or 'contain'.")
         return
 
+    if not os.path.exists(path):
+        print("That path doesn't exist.")
+        return
+
     if not os.path.isdir(path):
-        print("The path doesn't exist or is not a directory.")
+        print("That's not a directory.")
+        return
+
+    try:
+        os.listdir(path)
+    except PermissionError:
+        print("You don't have permission to access this directory.")
+        return
+    except Exception as e:
+        print(f"Can't read the directory: {e}")
         return
 
     results = search_items(path, item_type, name, match_type)
@@ -63,5 +80,4 @@ def main():
     else:
         print("No matches found.")
 
-if __name__ == "__main__":
-    main()
+start_search()
