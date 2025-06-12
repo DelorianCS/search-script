@@ -1,9 +1,4 @@
-
-<p align="center">
-  <strong>File/Directory Search Script</strong>
-</p>
-
-
+<h1 align="center">File/Directory Search Script</h1>
 
 ## Features
 
