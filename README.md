@@ -39,7 +39,7 @@ Now you can use `search` as a custom command.
 
 ---
 
-## 🚀 Usage Options
+## Usage Options
 
 ### 🧑 Interactive Mode (default)
 If no arguments are provided, the script will prompt you step by step:
@@ -66,7 +66,7 @@ Should the name match exactly or just contain it? (exact/contain):
 
 ---
 
-### ⚙️ Command-Line Mode (for advanced users)
+### ⚙️ Command-Line Mode
 
 Use the script with flags to skip prompts:
 
