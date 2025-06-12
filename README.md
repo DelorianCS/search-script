@@ -1,10 +1,8 @@
 
-# File/Directory Search Script
-
-
 <p align="center">
-  ### File
+  <strong>File/Directory Search Script</strong>
 </p>
+
 
 
 ## Features
