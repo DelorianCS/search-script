@@ -39,7 +39,7 @@ And add this at the very end
 ```
 search() {python3 /directory/search.py}
 ```
-#### And now you can do `search` on your terminal and use the script from there!
+And now you can do `search` on your terminal and use the script from there!
 
 ## Usage
   Basic Usage
@@ -59,7 +59,7 @@ search() {python3 /directory/search.py}
   Should the name match exactly or just contain it?
 ```
   Pick one (exact/contain) 
-  #### CAREFUL, do not type the file extension
+  **CAREFUL**, do not type the file extension `(e.g. file.txt)` 
 
 ## Examples
 This is an usage example for the script where an image `rei.png` is found
