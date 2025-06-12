@@ -57,7 +57,7 @@ And now you can do `search` on your terminal and use the script from there!
   Pick one (exact/contain)
 
 ## Thanks for reading
-Hope you found this script useful, 
+Hope you found this script useful
 
 
 Contributions, suggestions, and improvements are welcome.
