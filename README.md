@@ -60,9 +60,9 @@ And now you can do `search` on your terminal and use the script from there!
 ```
   Pick one (exact/contain)    **CAREFUL**, do not type the file extension 
   
-- Incorrect usage `(file.txt)`❌  
+- Incorrect usage `(file.txt)` ❌  
     
-- Correct usage `(file)`✅️
+- Correct usage `(file)` ✅️
 
 ## Examples
 This is an usage example for the script where an image `rei.png` is found
