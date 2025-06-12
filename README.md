@@ -10,7 +10,6 @@
 - 💻 Simple interactive command-line interface  
 - ⚡ Fast scanning using native Python `os.walk()`
 
----
 
 ## 🛠 Installation
 
@@ -37,7 +36,6 @@ search() { python3 /FULL/PATH/TO/search.py ; }
 
 Now you can run `search` in any terminal window!
 
----
 
 ## 🔧 Usage (Interactive Mode)
 
@@ -65,7 +63,6 @@ Should the name match exactly or just contain it? (exact/contain):
 
 After that, the search begins — and you'll see matching results printed out.
 
----
 
 ## ❤️ Thanks for reading
 
