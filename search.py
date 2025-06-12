@@ -1,5 +1,17 @@
-#!/usr/bin/env python3
+def print_ascii_art():
+    art = r"""
+  _____                     _        _____           _       _   
+ / ____|                   | |      / ____|         (_)     | |  
+| (___   ___  __ _ _ __ ___| |__   | (___   ___ _ __ _ _ __ | |_ 
+ \___ \ / _ \/ _` | '__/ __| '_ \   \___ \ / __| '__| | '_ \| __|
+ ____) |  __/ (_| | | | (__| | | |  ____) | (__| |  | | |_) | |_ 
+|_____/ \___|\__,_|_|  \___|_| |_| |_____/ \___|_|  |_| .__/ \__|
+                                                      | |        
+                                                      |_|       
+"""
+    print(art)
 
+# Simple Search Script
 import os
 
 def get_user_input():
@@ -27,6 +39,7 @@ def search_items(path, item_type, target_name, match_type):
     return found_items
 
 def main():
+    print_ascii_art()
     path, item_type, name, match_type = get_user_input()
 
     if item_type not in ['file', 'directory']:
