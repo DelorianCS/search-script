@@ -54,10 +54,10 @@ And now you can do `search` on your terminal and use the script from there!
 ```
   Should the name match exactly or just contain it?
 ```
+  Pick one (exact/contain)
+
 ## Thanks for reading
 Hope you found this script useful, 
 
 
 Contributions, suggestions, and improvements are welcome.
-```
-  Pick one (exact/contain)
