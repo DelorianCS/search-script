@@ -59,7 +59,7 @@ And now you can do `search` on your terminal and use the script from there!
   Should the name match exactly or just contain it?
 ```
   Pick one (exact/contain) 
-    **CAREFUL**, do not type the file extension `(e.g. file.txt)` 
+    **CAREFUL**, do not type the file extension `(file.txt)`❌  `(file)`✅️
 
 ## Examples
 This is an usage example for the script where an image `rei.png` is found
