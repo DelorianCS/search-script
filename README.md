@@ -38,7 +38,8 @@ python search.py
 ```
   Should the name match exactly or just contain it?
 ```
-  Pick one (exact/contain) | CAREFUL, do not type the file extension
+  Pick one (exact/contain) 
+  #### CAREFUL, do not type the file extension
   
 ## Requirements
 
