@@ -12,8 +12,8 @@ A Python script to recursively search for files or directories by name with exac
 ### 🚀 Fast scanning using native Python `os.walk()`
 
 ## Installation
-
-1. Ensure Python 3.6+ is installed
+1. Make sure you are on Linux
+1. Confirm that Python 3 is installed
 2. Clone the repository:
 
 ```
