@@ -23,6 +23,7 @@ def get_user_input():
 
 def search_items(path, item_type, target_name, match_type):
     found_items = []
+    target_name_upper = target_name.upper()
     for current_folder, folders, files in os.walk(path, onerror=lambda e: None):
         try:
             things = files if item_type == 'file' else folders
@@ -35,10 +36,11 @@ def search_items(path, item_type, target_name, match_type):
 
         for thing in things:
             name_check = os.path.splitext(thing)[0] if item_type == 'file' else thing
+            name_check_upper = name_check.upper()
 
-            if match_type == 'exact' and name_check == target_name:
+            if match_type == 'exact' and name_check_upper == target_name_upper:
                 found_items.append(os.path.join(current_folder, thing))
-            elif match_type == 'contain' and target_name in name_check:
+            elif match_type == 'contain' and target_name_upper in name_check_upper:
                 found_items.append(os.path.join(current_folder, thing))
     return found_items
 
