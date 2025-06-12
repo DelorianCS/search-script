@@ -21,7 +21,7 @@ git clone https://github.com/DelorianCS/search-script.git
 cd search-script
 python search.py
 ```
-#### You can also add it as a command like this
+You can also add it as a command like this
 ```
 nano ~/.bashrc / ~/.zshrc
 ```
@@ -33,7 +33,7 @@ And now you can do
 ```
 search
 ```
-On the terminal and use the script!
+##### On the terminal and use the script!
 
 ## Usage
   Basic Usage
