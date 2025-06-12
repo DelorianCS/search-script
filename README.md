@@ -22,7 +22,7 @@ python search.py
 ```
 You can also add it as a command like this
 ```
-nano ~/.bashrc / ~/.zshrc
+nano ~/.bashrc OR ~/.zshrc
 ```
 And add this at the very end
 ```
