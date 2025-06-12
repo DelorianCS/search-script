@@ -9,7 +9,6 @@ A Python script to recursively search for files or directories by name with exac
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Configuration as Command](#configuration-as-command)
 - [Requirements](#requirements)
 - [Examples](#examples)
 - [License](#license)
@@ -61,7 +60,17 @@ search() {python3 /directory/search.py}
 ```
   Pick one (exact/contain) 
   #### CAREFUL, do not type the file extension
-  
+
+## Examples
+This is an usage example for the script where I found an image
+```
+Where do you want to search?: /
+Are you looking for a file or a directory? (file/directory): file
+What name are you looking for?: rei
+Should the name match exactly or just contain it? (exact/contain): exact
+Found the following matches:
+/home/delorian/Downloads/images/rei.png
+```
 ## Requirements
 
   - Python3
