@@ -29,11 +29,7 @@ And add this at the very end
 ```
 search() {python3 /directory/search.py}
 ```
-And now you can do 
-```
-search
-```
-##### On the terminal and use the script!
+#### And now you can do `search` on your terminal and use the script from there!
 
 ## Usage
   Basic Usage
