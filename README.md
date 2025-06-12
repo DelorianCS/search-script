@@ -39,7 +39,7 @@ Now you can run `search` in any terminal window!
 
 ---
 
-## 🚀 Usage (Interactive Mode)
+## 🔧 Usage (Interactive Mode)
 
 The script will ask you a few questions:
 
