@@ -59,7 +59,9 @@ And now you can do `search` on your terminal and use the script from there!
   Should the name match exactly or just contain it?
 ```
   Pick one (exact/contain)    **CAREFUL**, do not type the file extension 
+  
     - Incorrect usage `(file.txt)`❌  
+    
     - Correct usage `(file)`✅️
 
 ## Examples
