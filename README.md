@@ -23,8 +23,8 @@ A Python script to recursively search for files or directories by name with exac
 
 ## Installation
 1. Make sure you are on Linux
-1. Confirm that Python 3 is installed
-2. Clone the repository:
+2. Confirm that Python 3 is installed
+3. Clone the repository:
 
 ```
 git clone https://github.com/DelorianCS/search-script.git
@@ -59,7 +59,9 @@ And now you can do `search` on your terminal and use the script from there!
   Should the name match exactly or just contain it?
 ```
   Pick one (exact/contain) 
-    **CAREFUL**, do not type the file extension `(file.txt)`❌  `(file)`✅️
+  - **CAREFUL**, do not type the file extension 
+    - `(file.txt)`❌  
+    - `(file)`✅️
 
 ## Examples
 This is an usage example for the script where an image `rei.png` is found
