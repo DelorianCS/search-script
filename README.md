@@ -18,9 +18,23 @@ A Python script to recursively search for files or directories by name with exac
 
 ```
 git clone https://github.com/DelorianCS/search-script.git
-cd search-script.git
+cd search-script
 python search.py
 ```
+#### You can also add it as a command like this
+```
+nano ~/.bashrc / ~/.zshrc
+```
+And add this at the very end
+```
+search() {python3 /directory/search.py}
+```
+And now you can do 
+```
+search
+```
+On the terminal and use the script!
+
 ## Usage
   Basic Usage
 ```
